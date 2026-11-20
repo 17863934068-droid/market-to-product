@@ -9,9 +9,9 @@
 下载或克隆此仓库，将整个 `market-to-product/` 文件夹复制到个人 Skills 目录。个人目录使用 `~/.agents/skills`。见 [OpenAI 官方安装说明](https://learn.chatgpt.com/docs/build-skills)。
 
 ```sh
-git clone https://github.com/17863934068-droid/market-research-skill.git
+git clone https://github.com/17863934068-droid/market-to-product.git
 mkdir -p "$HOME/.agents/skills"
-cp -R market-research-skill/market-to-product "$HOME/.agents/skills/"
+cp -R market-to-product/market-to-product "$HOME/.agents/skills/"
 ```
 
 开一个新会话，用 `$market-to-product` 调用。可以直接提供研究问题、地区、重点竞品和我方已知条件，也可以附上已有材料，要求给出分析框架或直接开展调研。
