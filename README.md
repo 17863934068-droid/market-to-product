@@ -1,21 +1,21 @@
-# Market Research Skill
+# Market to Product
 
-一套跨行业的市场调研与竞品分析方法。输入一个业务问题、市场或重点竞品，得到一份能支持产品规划、选细分市场和判断是否试点的结构化报告。
+帮助产品经理调研自己所在行业的市场环境、市面产品和重点竞品。接到任务后，围绕我方要做的产品决定快速搭建分析框架、查证关键问题，形成可用于团队评审的结构化报告。
 
-报告依次覆盖研究目的、市场大盘、产品与细分市场、重点竞品、SWOT 与决策建议。关键判断附证据和验证条件。
+报告依次覆盖研究目的、市场环境、市面产品与细分机会、重点竞品公司与产品、我方产品决策。用 SWOT 对照我方能力与外部机会，给出方案取舍、优先级和验证条件。
 
 ## 在 Codex 中使用
 
-下载或克隆此仓库，将整个 `market-research/` 文件夹复制到个人 Skills 目录。个人目录使用 `~/.agents/skills`。见 [OpenAI 官方安装说明](https://learn.chatgpt.com/docs/build-skills)。
+下载或克隆此仓库，将整个 `market-to-product/` 文件夹复制到个人 Skills 目录。个人目录使用 `~/.agents/skills`。见 [OpenAI 官方安装说明](https://learn.chatgpt.com/docs/build-skills)。
 
 ```sh
 git clone https://github.com/17863934068-droid/market-research-skill.git
 mkdir -p "$HOME/.agents/skills"
-cp -R market-research-skill/market-research "$HOME/.agents/skills/"
+cp -R market-research-skill/market-to-product "$HOME/.agents/skills/"
 ```
 
-开一个新会话，用 `$market-research` 调用。可以直接提供研究问题、地区、重点竞品和我方已知条件，也可以附上已有报告，让 Skill 核查证据或补写决策章节。
+开一个新会话，用 `$market-to-product` 调用。可以直接提供研究问题、地区、重点竞品和我方已知条件，也可以附上已有材料，要求给出分析框架或直接开展调研。
 
-> $market-research 以一家德国工业视觉软件厂商为核心竞品，判断一家已有制造业客户渠道的软件公司应优先验证哪个质检场景。重点分析竞品定价、销售与交付，输出含证据来源、SWOT 和试点门槛的 Markdown 报告。
+> $market-to-product 我们已有面向小型连锁门店的排班产品，正在考虑先做自动排班、换班审批还是工时统计。请研究目标客群、现有替代和一家重点竞品的公司与产品现状，输出五章报告，给出我方功能优先级、首版范围、SWOT 和验证计划。
 
-可直接查看[方法说明](market-research/SKILL.md)、[报告模板](market-research/references/report-template.md)和[证据校验规则](market-research/references/evidence-checks.md)。
+可直接查看[方法说明](market-to-product/SKILL.md)、[报告模板](market-to-product/references/report-template.md)和[证据校验规则](market-to-product/references/evidence-checks.md)。
